@@ -183,6 +183,8 @@ class FeatureEngineering(BaseEstimator, TransformerMixin):
         if self.verbose:
             self.logger.info(f"[FeatureEngineering] Final shape: {X_final.shape}")
 
+
+        self.feature_names_ = X_final.columns.tolist()
         return X_final
 
     # =========================================================
@@ -237,7 +239,6 @@ class FeatureEngineering(BaseEstimator, TransformerMixin):
 
         # --- Combine all feature sets ---
         X_final = pd.concat([scaled_df, ohe_df, freq_df], axis=1)
-        self.feature_names_ = X_final.columns.tolist()
         return X_final
 
     # =========================================================

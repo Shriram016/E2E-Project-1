@@ -1,0 +1,39 @@
+{
+  "timestamp": "2025-10-20T20:10:12.518147",
+  "pipelines_validated": [
+    "tree",
+    "normal"
+  ],
+  "results": [
+    {
+      "pipeline": "tree",
+      "train_shape": [
+        590540,
+        372
+      ],
+      "test_shape": [
+        506691,
+        372
+      ],
+      "num_features": 372,
+      "schema_match": true,
+      "deterministic": true,
+      "timestamp": "2025-10-20T20:09:33.514000"
+    },
+    {
+      "pipeline": "normal",
+      "train_shape": [
+        590540,
+        131
+      ],
+      "test_shape": [
+        506691,
+        131
+      ],
+      "num_features": 131,
+      "schema_match": true,
+      "deterministic": true,
+      "timestamp": "2025-10-20T20:10:12.455442"
+    }
+  ]
+}
